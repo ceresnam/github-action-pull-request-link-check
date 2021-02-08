@@ -1,0 +1,16 @@
+name: 'Pull Request Link Check'
+description: 'Checks existence of a link in description of Pull request'
+author: 'Michal Ceresna'
+inputs:
+  repo-token:
+    description: 'The GITHUB_TOKEN secret'
+    required: true
+  link-regex:
+    description: 'Regular expresion of link to search for'
+    default: 'https?:\/\/'
+  error-message:
+    description: 'Error message to display if no links are found'
+    default: 'no links found'
+runs:
+  using: 'node12'
+  main: 'lib/main.js'

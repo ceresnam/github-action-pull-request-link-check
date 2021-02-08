@@ -1,0 +1,30 @@
+{
+  "name": "pull-request-link-check",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Github action checking existence of link in Pull Request description",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceresnam/github-action-pull-request-link-check.git"
+  },
+  "keywords": [
+    "github",
+    "action",
+    "check",
+    "link"
+  ],
+  "author": "Michal Ceresna (https://github.com/ceresnam)",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.19.16",
+    "typescript": "^4.1.3"
+  }
+}
