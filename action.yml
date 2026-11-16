@@ -12,5 +12,5 @@ inputs:
     description: 'Error message to display if no links are found'
     default: 'no links found'
 runs:
-  using: 'node12'
+  using: 'node24'
   main: 'dist/index.js'

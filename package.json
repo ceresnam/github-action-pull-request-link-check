@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "Github action checking existence of link in Pull Request description",
+  "type": "module",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc && ncc build lib/main.js --license licenses.txt"
@@ -20,12 +21,12 @@
   "author": "Michal Ceresna (https://github.com/ceresnam)",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "@actions/github": "^4.0.0"
+    "@actions/core": "^3.0.1",
+    "@actions/github": "^9.1.1"
   },
   "devDependencies": {
-    "@types/node": "^12.19.16",
-    "@vercel/ncc": "^0.27.0",
-    "typescript": "^4.1.3"
+    "@types/node": "^26.6.6",
+    "@vercel/ncc": "^0.45.0",
+    "typescript": "^7.0.2"
   }
 }
