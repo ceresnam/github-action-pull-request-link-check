@@ -13,7 +13,7 @@ jobs:
   codequality:
     runs-on: ubuntu-latest
     steps:
-    - uses: ceresnam/github-action-pull-request-link-check@v1
+    - uses: ceresnam/github-action-pull-request-link-check@v2
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         link-regex: "https?:\/\/(www\.)?trello\.com\/"
